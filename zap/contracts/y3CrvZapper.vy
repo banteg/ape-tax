@@ -9,7 +9,7 @@ interface Vault:
 
 interface Claimable:
     def claimFor(recipient: address): nonpayable
-    def claim(recipient: address): nonpayable
+    def claim(): nonpayable
 
 threeCrv: public(ERC20)
 threeCrvVault: public(Vault)
